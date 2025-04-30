@@ -5,34 +5,34 @@
       "value": "1",
       "domain": "en.wikipedia.org",
       "path": "/",
-      "expires": 1746046146.765006,
+      "expires": 1746064493.563632,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "WMF-Last-Access",
-      "value": "29-Apr-2025",
+      "value": "30-Apr-2025",
       "domain": "en.wikipedia.org",
       "path": "/",
-      "expires": 1748692800.765315,
+      "expires": 1748736000.563701,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "WMF-Last-Access-Global",
-      "value": "29-Apr-2025",
+      "value": "30-Apr-2025",
       "domain": ".wikipedia.org",
       "path": "/",
-      "expires": 1748692800.765678,
+      "expires": 1748736000.563959,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "GeoIP",
-      "value": "US:MA:Cambridge:42.36:-71.10:v4",
+      "value": "US:MA:Melrose:42.46:-71.06:v4",
       "domain": ".wikipedia.org",
       "path": "/",
       "expires": -1,
@@ -45,24 +45,24 @@
       "value": "0.001",
       "domain": "en.wikipedia.org",
       "path": "/",
-      "expires": 1745963346.765728,
+      "expires": 1745981693.564002,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "WMF-Last-Access",
-      "value": "29-Apr-2025",
+      "value": "30-Apr-2025",
       "domain": "auth.wikimedia.org",
       "path": "/",
-      "expires": 1748692800.816267,
+      "expires": 1748736000.605916,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "GeoIP",
-      "value": "US:MA:Cambridge:42.36:-71.10:v4",
+      "value": "US:MA:Melrose:42.46:-71.06:v4",
       "domain": ".wikimedia.org",
       "path": "/",
       "expires": -1,
@@ -75,17 +75,17 @@
       "value": "0.001",
       "domain": "auth.wikimedia.org",
       "path": "/",
-      "expires": 1745963346.816345,
+      "expires": 1745981693.605991,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "WMF-Last-Access",
-      "value": "29-Apr-2025",
+      "value": "30-Apr-2025",
       "domain": "login.wikimedia.org",
       "path": "/",
-      "expires": 1748692800.871357,
+      "expires": 1748736000.658933,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
@@ -95,14 +95,14 @@
       "value": "0.001",
       "domain": "login.wikimedia.org",
       "path": "/",
-      "expires": 1745963346.871438,
+      "expires": 1745981693.659017,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "enwikimwuser-sessionId",
-      "value": "9925821c1a2bd0f97d13",
+      "value": "5a431a166077296a476a",
       "domain": "auth.wikimedia.org",
       "path": "/",
       "expires": -1,
@@ -112,7 +112,7 @@
     },
     {
       "name": "authSession",
-      "value": "oe4a28pljhabap3nhgm4u7b03hlr74j9",
+      "value": "99d0osl5boaelb1ue3n7eeulkr9lt974",
       "domain": "auth.wikimedia.org",
       "path": "/",
       "expires": -1,
@@ -125,7 +125,7 @@
       "value": "49603194",
       "domain": "auth.wikimedia.org",
       "path": "/",
-      "expires": 1748551748.418015,
+      "expires": 1748570094.944885,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -135,7 +135,7 @@
       "value": "Anika.kapoor810",
       "domain": "auth.wikimedia.org",
       "path": "/",
-      "expires": 1748551748.418078,
+      "expires": 1748570094.944913,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -145,14 +145,14 @@
       "value": "Anika.kapoor810",
       "domain": "auth.wikimedia.org",
       "path": "/",
-      "expires": 1748551748.418139,
+      "expires": 1748570094.944939,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "centralauth_Session",
-      "value": "9e3231aaf93e41e840b3cc36bf3ab547",
+      "value": "1d5c1ebcc715e0a2bca9586cf37ab5e9",
       "domain": "auth.wikimedia.org",
       "path": "/",
       "expires": -1,
@@ -162,20 +162,20 @@
     },
     {
       "name": "loginnotify_prevlogins",
-      "value": "2025-136zhxh-h63rghq7eomjq0tgx44z9uf8jet7d11",
+      "value": "2025-jnfaw5-nhvlz4nibj9s4v8e2nqma1pi15n682m",
       "domain": "auth.wikimedia.org",
       "path": "/",
-      "expires": 1761511748.418251,
+      "expires": 1761530094.944992,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "cpPosIndex",
-      "value": "1%401745959748%234e773603cc394bd1d7a865925432c292",
+      "value": "1%401745978094%237137d64939f6f661680bf84eed5d6220",
       "domain": "auth.wikimedia.org",
       "path": "/",
-      "expires": 1745959758.418312,
+      "expires": 1745978104.945019,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
@@ -185,14 +185,14 @@
       "value": "master",
       "domain": "auth.wikimedia.org",
       "path": "/",
-      "expires": 1745959758.418373,
+      "expires": 1745978104.945047,
       "httpOnly": true,
       "secure": true,
       "sameSite": "Lax"
     },
     {
       "name": "enwikiSession",
-      "value": "jrklf7l5ji2ptk0rjg19uko4dqg3a1ds",
+      "value": "2rkvjaa2u7sh79ndm0lo962sp3bbm61d",
       "domain": "en.wikipedia.org",
       "path": "/",
       "expires": -1,
@@ -205,7 +205,7 @@
       "value": "49603194",
       "domain": "en.wikipedia.org",
       "path": "/",
-      "expires": 1748551749.137224,
+      "expires": 1748570095.499476,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -215,7 +215,7 @@
       "value": "Anika.kapoor810",
       "domain": "en.wikipedia.org",
       "path": "/",
-      "expires": 1748551749.137282,
+      "expires": 1748570095.499508,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
@@ -225,30 +225,20 @@
       "value": "Anika.kapoor810",
       "domain": ".wikipedia.org",
       "path": "/",
-      "expires": 1748551749.137337,
+      "expires": 1748570095.499539,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
     },
     {
       "name": "centralauth_Session",
-      "value": "5964506545597c0832840e4162ff4e64",
+      "value": "9cb16014d15cd9d95fa56d6f4384a21f",
       "domain": ".wikipedia.org",
       "path": "/",
       "expires": -1,
       "httpOnly": true,
       "secure": true,
       "sameSite": "None"
-    },
-    {
-      "name": "WMF-DP",
-      "value": "b1e",
-      "domain": "en.wikipedia.org",
-      "path": "/",
-      "expires": 1745971200.544886,
-      "httpOnly": true,
-      "secure": true,
-      "sameSite": "Lax"
     }
   ],
   "origins": [
@@ -261,36 +251,7 @@
         },
         {
           "name": "wmE-sessionTickLastTickTime",
-          "value": "1745959747568"
-        }
-      ]
-    },
-    {
-      "origin": "https://en.wikipedia.org",
-      "localStorage": [
-        {
-          "name": "CentralNoticeKV|global|impression_diet_UCoC_AR_2025_cookie",
-          "value": "{\"expiry\":1777495750,\"val\":{\"seenCount\":1,\"skippedThisCycle\":0,\"nextCycleStart\":1746564549749,\"seenThisCycle\":1}}"
-        },
-        {
-          "name": "CentralNoticeKV|global|buckets",
-          "value": "{\"expiry\":1748810950,\"val\":\"UCoC-related annual review 2025!344934400!3801540!1\"}"
-        },
-        {
-          "name": "uls-previous-language-autonym",
-          "value": "English"
-        },
-        {
-          "name": "wmE-sessionTickLastTickTime",
-          "value": "1745959749826"
-        },
-        {
-          "name": "uls-previous-language-code",
-          "value": "en"
-        },
-        {
-          "name": "wmE-sessionTickTickCount",
-          "value": "1"
+          "value": "1745978094239"
         }
       ]
     }

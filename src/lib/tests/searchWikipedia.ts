@@ -18,8 +18,6 @@ import { Page, expect } from '@playwright/test';
  */
 
 
-// 2. Complete the Wikipedia search test
-// - In `searchWikipedia.ts`, finish the existing test so that it correctly implements the test case in the file
 export async function run(page: Page, params: {}) {
     /** STEP: Navigate to URL */
     await page.goto('https://www.wikipedia.org/');
@@ -36,6 +34,9 @@ export async function run(page: Page, params: {}) {
         name: "Artificial intelligence",
     }).first();
     await artificialIntelligenceLink.click();
+    
+    /** STEP: Ensure we are on the "Artificial intelligence" page */
+    await expect(page.locator('#firstHeading')).toHaveText(/^Artificial intelligence$/);
 
     /** STEP: Click 'View History' button */
     await page.getByRole('link', { name: 'View history' }).click();
@@ -46,9 +47,15 @@ export async function run(page: Page, params: {}) {
     /** STEP: Define the latestEditor locator as the editor of the most recent revision */
     // '#pagehistory' selects element with id 'pagehistory'
     // '#pagehistory li' targets each list item in revision history, first() grabs the most recent revision
+    const latestEdit = page.locator('#pagehistory li').first();
     // 'a.new.mw-userlink' grabs all <a> elements in first item with class 'new.mw-userlink'
-    const latestEditor = page.locator('#pagehistory li').first().locator('a.new.mw-userlink');
+    const latestEditor = latestEdit.locator('a.new.mw-userlink');
     
-    /** STEP: Assert latest edit was made by user "Worstbull" */
-    await expect(latestEditor).toHaveText("Worstbull")
+    /** STEP: Assert latest edit was made by user "Worstbull" - if not, provide an error message */
+    try {
+        await expect(latestEditor).toHaveText("Worstbull");
+    } catch {
+        const actual = await latestEditor.innerText();
+        throw new Error(`Expected latest edit to be made by Worstbull, received string "${actual}".`)
+    }
 }

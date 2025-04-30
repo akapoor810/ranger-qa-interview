@@ -19,6 +19,7 @@ export async function run(page: Page, params: {}) {
     await page.goto('https://en.wikipedia.org/wiki/Main_Page');
 
     /** STEP: Click the link to view the total number of articles in English */
+    // Number of articles is stored as the second element under the "Special:Statistics" title where id="articlecount"
     const totalArticlesLink = page.locator('#articlecount a[title = "Special:Statistics"]').nth(1);
     
     /** STEP: Extract the numerical value */
@@ -28,7 +29,7 @@ export async function run(page: Page, params: {}) {
     /** STEP: Assert the number is less than 7,000,000 */
     expect(numTotalArticles).toBeLessThan(7000000000)
 
-    /** STEP: Get the default font size */
+    /** STEP: Get the default paragraph font size */
     const defaultText = page.locator('p').first();	  
     const defaultSizeStr = await defaultText.evaluate((element) =>	    
         window.getComputedStyle(element).getPropertyValue("font-size")	  
@@ -40,7 +41,7 @@ export async function run(page: Page, params: {}) {
     const smallTextSizeOption = page.getByRole('radio', { name: 'Small' });
     await smallTextSizeOption.click();
     
-    /** STEP: Get the Small font size */
+    /** STEP: Get the Small paragraph font size */
     const smallText = page.locator('p').first();	  
     const smallSizeStr = await smallText.evaluate((element) =>	    
         window.getComputedStyle(element).getPropertyValue("font-size")	  
@@ -51,14 +52,18 @@ export async function run(page: Page, params: {}) {
     const largeTextSizeOption = page.getByRole('radio', { name: 'Large' });
     await largeTextSizeOption.click();
     
-    /** STEP: Get the Large font size */
+    /** STEP: Get the Large paragraph font size */
     const largeText = page.locator('p').first();	  
     const largeSizeStr = await largeText.evaluate((element) =>	    
         window.getComputedStyle(element).getPropertyValue("font-size")	  
     );
     const largeSize = parseFloat(largeSizeStr);
 
+
+    /** STEP: Assert the text got smaller when the "Small" text size option was selected */
     expect(smallSize).toBeLessThan(defaultSize);
+
+    /** STEP: Assert the text got larger when the "Large" text size option was selected */
     expect(largeSize).toBeGreaterThan(defaultSize);
 
     /** STEP: Click the 'Standard' text size option in the appearance settings */
@@ -69,8 +74,9 @@ export async function run(page: Page, params: {}) {
     const standardText = page.locator('p').first();	  
     const standardSizeStr = await standardText.evaluate((element) =>	    
         window.getComputedStyle(element).getPropertyValue("font-size")	  
-    );
+);
     const standardSize = parseFloat(standardSizeStr);
-    console.log(`${standardSize}`);
+
+    /** STEP: Assert the text reverted to the default size when the "Standard" text size option was selected */
     expect(standardSize).toEqual(defaultSize);
 }
